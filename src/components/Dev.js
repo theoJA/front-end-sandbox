@@ -13,6 +13,7 @@ const Dev = props => {
                     <p>Name: {context.state.name}</p>
                     <p>Age: {context.state.age}</p>
                     <p>Gender: {context.state.gender}</p>
+                    <button onClick={context.growAYearOlder}>🎂</button>
                 </React.Fragment>
             )}
         </MyContext.Consumer>
