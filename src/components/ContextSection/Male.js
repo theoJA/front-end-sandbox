@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Dev from "./Dev";
-import "../styles/Male.css";
+import "../../styles/Male.css";
 
 export default class Male extends Component {
     render() {

@@ -1,6 +1,6 @@
 import React from 'react';
-import { MyContext } from "../context/MyProvider";
-import "../styles/Dev.css";
+import { MyContext } from "../../context/MyProvider";
+import "../../styles/Dev.css";
 
 const Dev = props => {
     return (

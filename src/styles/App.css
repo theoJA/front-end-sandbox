@@ -2,9 +2,17 @@
   text-align: center;
 }
 
+.content-container {
+  padding: 30px;
+}
+
+.section-title {
+  text-align: start;
+}
+
 .App-header {
   background-color: #222;
-  height: 150px;
+  height: 100px;
   padding: 20px;
   color: white;
   display: flex;
@@ -13,7 +21,7 @@
 }
 
 .App-title {
-  font-size: 1.5em;
+  font-size: 2.5em;
 }
 
 .App-intro {
@@ -25,6 +33,5 @@
   padding: 20px;
   font-size: 20px;
   color: #fff;
-  margin: 20px;
   text-align: start;
 }
