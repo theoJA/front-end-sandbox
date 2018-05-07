@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import "../styles/Human.css";
 import Male from "./Male";
 
 export default class Human extends Component {
@@ -6,8 +7,10 @@ export default class Human extends Component {
         return (
             /*No need to pass props!*/
             <React.Fragment>
-               <p>I'm a human component</p>
-               <Male/> 
+                <div className="human-container">
+                    <p>HUMAN</p>
+                    <Male/>
+                </div>
             </React.Fragment>
         )
     }

@@ -10,12 +10,15 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
+          <h1 className="App-title">Front-End Sandbox</h1>
         </header>
-        <MyProvider>
-          <Human/>
-        </MyProvider>
+        <div className="provider-container">
+          <MyProvider>
+            <p>PROVIDER</p>
+            <p>This is my state: {`{name: "Theo", age: 25, gender: "Male", growAYearOlder: function that increases age by 1}`}</p>
+            <Human/>
+          </MyProvider>
+        </div>
       </div>
     );
   }

@@ -1,5 +1,6 @@
 import React from 'react';
 import { MyContext } from "../context/MyProvider";
+import "../styles/Dev.css";
 
 const Dev = props => {
     return (
@@ -9,11 +10,17 @@ const Dev = props => {
                 /*React.Fragment allows us to group a list of children without adding extra
                 nodes to the DOM*/
                 <React.Fragment>
-                    <p>I'm a dev</p>
-                    <p>Name: {context.state.name}</p>
-                    <p>Age: {context.state.age}</p>
-                    <p>Gender: {context.state.gender}</p>
-                    <button onClick={context.growAYearOlder}>🎂</button>
+                    <div className="dev-container">
+                        <p>DEV</p>
+                        <div>
+                            <div>
+                                <p>Name: {context.state.name}</p>
+                                <p>Age: {context.state.age}</p>
+                                <p>Gender: {context.state.gender}</p>
+                            </div>
+                            <button onClick={context.growAYearOlder}>🎂 Age + 1</button>
+                        </div>
+                    </div>
                 </React.Fragment>
             )}
         </MyContext.Consumer>
