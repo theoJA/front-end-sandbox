@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './styles/App.css';
+import './css/App.css';
+import './css/context.css';
 
 import MyProvider from "./context/MyProvider";
-import Human from "./components/ContextSection/Human";
+import Human from "./components/contextSection/Human";
 
 class App extends Component {
   render() {

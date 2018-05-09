@@ -27,11 +27,3 @@
 .App-intro {
   font-size: large;
 }
-
-.provider-container {
-  background-color: rgb(236, 56, 56);
-  padding: 20px;
-  font-size: 20px;
-  color: #fff;
-  text-align: start;
-}

@@ -1,6 +1,6 @@
 import React from 'react';
 import { MyContext } from "../../context/MyProvider";
-import "../../styles/Dev.css";
+import "../../css/context.css";
 
 const Dev = props => {
     return (
@@ -18,7 +18,7 @@ const Dev = props => {
                                 <p>Age: {context.state.age}</p>
                                 <p>Gender: {context.state.gender}</p>
                             </div>
-                            <button onClick={context.growAYearOlder}>🎂 Age + 1</button>
+                            <button onClick={context.growAYearOlder}><span role="img" aria-label="Birthday">🎂</span> Age + 1</button>
                         </div>
                     </div>
                 </React.Fragment>

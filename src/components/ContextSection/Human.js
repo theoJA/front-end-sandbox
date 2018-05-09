@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import "../../styles/Human.css";
+import "../../css/context.css";
 import Male from "./Male";
 
 export default class Human extends Component {
