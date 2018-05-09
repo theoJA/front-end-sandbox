@@ -11,9 +11,10 @@ const Dev = props => {
                 nodes to the DOM*/
                 <React.Fragment>
                     <div className="dev-container">
-                        <p>DEV</p>
+                        <p>DEV (CONSUMER)</p>
                         <div>
                             <div>
+                                <p>No prop drilling required. State is accessible anywhere.</p>
                                 <p>Name: {context.state.name}</p>
                                 <p>Age: {context.state.age}</p>
                                 <p>Gender: {context.state.gender}</p>

@@ -4,6 +4,7 @@ import './css/context.css';
 
 import MyProvider from "./context/MyProvider";
 import Human from "./components/contextSection/Human";
+import Grid from "./components/gridSection/Grid";
 
 class App extends Component {
   render() {
@@ -14,6 +15,7 @@ class App extends Component {
         </header>
         <div className="content-container">
           <h1 className="section-title">React Context</h1>
+          
           <div className="provider-container">
             <MyProvider>
               <p>PROVIDER</p>
@@ -21,6 +23,9 @@ class App extends Component {
               <Human/>
             </MyProvider>
           </div>
+
+          <h1 className="section-title">Grid</h1>
+          <Grid />
         </div>
       </div>
     );
