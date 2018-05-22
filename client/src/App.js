@@ -2,9 +2,7 @@ import React, { Component } from 'react';
 import './css/App.css';
 import './css/context.css';
 
-import MyProvider from "./context/MyProvider";
-import Human from "./components/contextSection/Human";
-import Grid from "./components/gridSection/Grid";
+import Sandbox from './components/sandbox';
 
 class App extends Component {
   render() {
@@ -16,16 +14,7 @@ class App extends Component {
         <div className="content-container">
           <h1 className="section-title">React Context</h1>
           
-          <div className="provider-container">
-            <MyProvider>
-              <p>PROVIDER</p>
-              <p>This is my state: {`{name: "Theo", age: 25, gender: "Male", growAYearOlder: function that increases age by 1}`}</p>
-              <Human/>
-            </MyProvider>
-          </div>
-
-          <h1 className="section-title">Grid</h1>
-          <Grid />
+          <Sandbox />
         </div>
       </div>
     );
