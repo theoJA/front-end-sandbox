@@ -1,0 +1,30 @@
+@mixin home-image-size {
+    width: 150px;
+    height: 150px;
+}
+
+.home-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    div {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        img {
+            justify-self: center;
+            @include home-image-size;
+        }
+    }
+}
+
+.sandbox {
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+.todo {
+    grid-column: 4/5;
+    grid-row: 2/3;
+}
