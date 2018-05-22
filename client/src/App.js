@@ -1,22 +1,16 @@
-import React, { Component } from 'react';
-import './css/App.css';
-import './css/context.css';
+import React, { Component } from "react";
 
-import Sandbox from './components/sandbox';
+import Sandbox from "./components/sandbox";
+import Home from "./components/Home";
+import RootRouter from "./routes/RootRouter";
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <h1 className="App-title">Front-End Sandbox</h1>
-        </header>
-        <div className="content-container">
-          <h1 className="section-title">React Context</h1>
-          
-          <Sandbox />
-        </div>
-      </div>
+      <RootRouter 
+        Sandbox={Sandbox} 
+        Home={Home}
+      />   
     );
   }
 }
